@@ -1,0 +1,24 @@
+{
+  "onboarding": {
+    "title": "KrishiAI",
+    "subtitle": "तुमचा स्मार्ट शेती सोबती. उत्तम पिके, कमी चिंता।",
+    "choose_language": "भाषा निवडा",
+    "your_profile": "तुमचे पीक आणि स्थान",
+    "crop_type": "पिकाचा प्रकार",
+    "location": "स्थान / गाव",
+    "farm_size": "शेतीचा आकार (एकर)",
+    "your_name": "तुमचे नाव",
+    "button_start": "स्मार्ट शेती सुरू करा"
+  },
+  "dashboard": {
+    "greeting": "नमस्ते",
+    "summary": "शेतीचा गोषवारा",
+    "health": "आरोग्य",
+    "market": "बाजार भाव",
+    "weather": "हवामान"
+  },
+  "chat": {
+    "title": "AgriBot सहायक",
+    "placeholder": "तुमच्या शेतीबद्दल काहीही विचारा..."
+  }
+}

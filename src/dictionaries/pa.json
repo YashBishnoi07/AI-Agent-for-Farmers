@@ -1,0 +1,24 @@
+{
+  "onboarding": {
+    "title": "KrishiAI",
+    "subtitle": "ਤੁਹਾਡਾ ਸਮਾਰਟ ਖੇਤੀ ਸਾਥੀ। ਬਿਹਤਰ ਫਸਲਾਂ, ਘੱਟ ਚਿੰਤਾਵਾਂ।",
+    "choose_language": "ਭਾਸ਼ਾ ਚੁਣੋ",
+    "your_profile": "ਤੁਹਾਡੀ ਫਸਲ ਅਤੇ ਸਥਾਨ",
+    "crop_type": "ਫਸਲ ਦੀ ਕਿਸਮ",
+    "location": "ਸਥਾਨ / ਪਿੰਡ",
+    "farm_size": "ਖੇਤ ਦਾ ਆਕਾਰ (ਏਕੜ)",
+    "your_name": "ਤੁਹਾਡਾ ਨਾਮ",
+    "button_start": "ਸਮਾਰਟ ਖੇਤੀ ਸ਼ੁਰੂ ਕਰੋ"
+  },
+  "dashboard": {
+    "greeting": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ",
+    "summary": "ਖੇਤ ਦਾ ਸਾਰ",
+    "health": "ਸਿਹਤ",
+    "market": "ਮੰਡੀ",
+    "weather": "ਮੌਸਮ"
+  },
+  "chat": {
+    "title": "AgriBot ਸਹਾਇਕ",
+    "placeholder": "ਆਪਣੀ ਖੇਤੀ ਬਾਰੇ ਕੁਝ ਵੀ ਪੁੱਛੋ..."
+  }
+}

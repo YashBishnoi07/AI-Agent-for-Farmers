@@ -1,0 +1,24 @@
+{
+  "onboarding": {
+    "title": "KrishiAI",
+    "subtitle": "Your smart farming companion. Better crops, less worries.",
+    "choose_language": "Choose Language",
+    "your_profile": "Your Crop & Location",
+    "crop_type": "Crop Type",
+    "location": "Location / Village",
+    "farm_size": "Farm Size (Acres)",
+    "your_name": "Your Name",
+    "button_start": "Start Farming Smart"
+  },
+  "dashboard": {
+    "greeting": "Hello",
+    "summary": "Field Summary",
+    "health": "Health",
+    "market": "Market",
+    "weather": "Weather"
+  },
+  "chat": {
+    "title": "AgriBot Assistant",
+    "placeholder": "Ask anything about your farm..."
+  }
+}

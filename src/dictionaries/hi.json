@@ -1,0 +1,24 @@
+{
+  "onboarding": {
+    "title": "KrishiAI",
+    "subtitle": "आपका स्मार्ट खेती साथी। बेहतर फसलें, कम चिंताएं।",
+    "choose_language": "भाषा चुनें",
+    "your_profile": "आपकी फसल और स्थान",
+    "crop_type": "फसल का प्रकार",
+    "location": "स्थान / गांव",
+    "farm_size": "क्षेत्रफल (एकड़)",
+    "your_name": "आपका नाम",
+    "button_start": "स्मार्ट खेती शुरू करें"
+  },
+  "dashboard": {
+    "greeting": "नमस्ते",
+    "summary": "खेत का सारांश",
+    "health": "स्वास्थ्य",
+    "market": "मंडी",
+    "weather": "मौसम"
+  },
+  "chat": {
+    "title": "AgriBot सहायक",
+    "placeholder": "अपनी खेती के बारे में कुछ भी पूछें..."
+  }
+}
