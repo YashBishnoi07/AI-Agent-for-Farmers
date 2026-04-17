@@ -8,7 +8,10 @@ import {
   User, 
   Maximize2, 
   ArrowRight,
-  Languages
+  Languages,
+  Mountain,
+  Layers,
+  Droplets
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useUser, Language } from "@/context/UserContext";
@@ -29,7 +32,8 @@ export default function OnboardingPage() {
     name: profile.name,
     cropType: profile.cropType,
     location: profile.location,
-    farmSize: profile.farmSize
+    farmSize: profile.farmSize,
+    soilType: profile.soilType || "Loam"
   });
 
   const handleStart = () => {
@@ -150,6 +154,31 @@ export default function OnboardingPage() {
                     onChange={(e) => setFormData({...formData, farmSize: e.target.value})}
                     className="w-full pl-12 pr-4 py-4 bg-emerald-50/30 border border-emerald-100 rounded-3xl text-sm font-bold text-emerald-950 focus:ring-4 focus:ring-emerald-500/5 focus:border-emerald-500 outline-none transition-all placeholder:text-emerald-800/20"
                   />
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <label className="text-[10px] font-black text-emerald-800/40 uppercase ml-1 tracking-widest">{t.soil_type}</label>
+                <div className="grid grid-cols-3 gap-2">
+                  {[
+                    { id: "Loam", name: t.soil_loam, icon: Layers },
+                    { id: "Clay", name: t.soil_clay, icon: Mountain },
+                    { id: "Sandy", name: t.soil_sandy, icon: Droplets }
+                  ].map((soil) => (
+                    <button
+                      key={soil.id}
+                      type="button"
+                      onClick={() => setFormData({...formData, soilType: soil.id})}
+                      className={`p-3 rounded-2xl flex flex-col items-center gap-2 border-2 transition-all ${
+                        formData.soilType === soil.id
+                          ? "bg-emerald-50 border-emerald-500 text-emerald-600 shadow-sm"
+                          : "bg-white border-emerald-50 text-emerald-900/40 hover:border-emerald-100"
+                      }`}
+                    >
+                      <soil.icon size={20} />
+                      <span className="text-[8px] font-black text-center leading-tight">{soil.name}</span>
+                    </button>
+                  ))}
                 </div>
               </div>
 

@@ -9,12 +9,34 @@ import {
   AlertTriangle,
   CheckCircle2,
   Trash2,
-  Info
+  Info,
+  Droplets,
+  Sprout
 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
 const INITIAL_NOTIFICATIONS = [
+  { 
+    id: 5, 
+    type: "irrigation", 
+    title: "Time to Water", 
+    desc: "Soil moisture is at 28%. Water your Wheat crop today to prevent heat stress.", 
+    time: "Just now",
+    icon: Droplets,
+    color: "bg-cyan-50 text-cyan-600",
+    urgent: true
+  },
+  { 
+    id: 6, 
+    type: "yield", 
+    title: "Yield Milestone: 75%", 
+    desc: "Your Wheat crop has reached the grain-filling stage. Potential yield is currently estimated at 4.2 Tons/Acre.", 
+    time: "1 hour ago",
+    icon: Sprout,
+    color: "bg-emerald-50 text-emerald-600",
+    urgent: false
+  },
   { 
     id: 1, 
     type: "weather", 

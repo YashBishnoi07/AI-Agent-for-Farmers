@@ -16,7 +16,8 @@ import {
   Search,
   ChevronRight,
   TrendingDown,
-  AlertCircle
+  AlertCircle,
+  Sprout
 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -45,9 +46,9 @@ export default function Home() {
 
   const menuItems = [
     { id: "market", name: dictionary?.dashboard?.market || "Market", icon: TrendingUp, color: "bg-amber-50 text-amber-600 border-amber-100" },
-    { id: "weather", name: dictionary?.dashboard?.weather || "Weather", icon: CloudSun, color: "bg-blue-50 text-blue-600 border-blue-100" },
+    { id: "yield", name: dictionary?.dashboard?.yield || "Yield", icon: Sprout, color: "bg-emerald-50 text-emerald-600 border-emerald-100" },
+    { id: "irrigation", name: "Irrigation", icon: Droplets, color: "bg-cyan-50 text-cyan-600 border-cyan-100" },
     { id: "vision", name: "Vision", icon: Camera, color: "bg-purple-50 text-purple-600 border-purple-100" },
-    { id: "chat", name: "AI Chat", icon: MessageSquare, color: "bg-emerald-50 text-emerald-600 border-emerald-100" },
   ];
 
   return (
@@ -67,7 +68,39 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-8" />
+      {/* Quick Stats - Priority Irrigation */}
+      <motion.div 
+        variants={fadeInUp}
+        initial="initial"
+        animate="animate"
+        className="grid grid-cols-2 gap-3 pt-8"
+      >
+        <Link href="/irrigation" className="bg-white p-4 rounded-[32px] border border-emerald-50 shadow-sm flex flex-col gap-2">
+          <div className="flex justify-between items-start">
+            <div className="w-8 h-8 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center">
+              <Droplets size={16} />
+            </div>
+            <span className="text-[8px] font-black text-emerald-600 uppercase bg-emerald-50 px-2 py-0.5 rounded-full tracking-tighter">Optimal</span>
+          </div>
+          <div>
+            <div className="text-[10px] font-black text-zinc-400 uppercase tracking-tighter">Field Moisture</div>
+            <div className="text-lg font-black text-emerald-950 tracking-tighter">82% <span className="text-[10px] text-zinc-400 font-medium tracking-normal">Safe</span></div>
+          </div>
+        </Link>
+        
+        <Link href="/yield" className="bg-white p-4 rounded-[32px] border border-emerald-50 shadow-sm flex flex-col gap-2">
+          <div className="flex justify-between items-start">
+            <div className="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+              <Sprout size={16} />
+            </div>
+            <span className="text-[8px] font-black text-amber-500 uppercase bg-amber-50 px-2 py-0.5 rounded-full tracking-tighter">Gold</span>
+          </div>
+          <div>
+            <div className="text-[10px] font-black text-zinc-400 uppercase tracking-tighter">Yield Forecast</div>
+            <div className="text-lg font-black text-emerald-950 tracking-tighter">92% <span className="text-[10px] text-zinc-400 font-medium tracking-normal">Potential</span></div>
+          </div>
+        </Link>
+      </motion.div>
 
       <div className="flex justify-between items-center">
         <div>
@@ -98,7 +131,7 @@ export default function Home() {
         <div className="flex justify-between items-start mb-6">
           <div className="space-y-1">
             <div className="flex items-center gap-2 opacity-80 text-[10px] font-bold uppercase tracking-widest">
-              <MapPin size={12} /> {profile.location || "Local Field"}
+              <MapPin size={12} className="" /> {profile.location || "Local Field"}
             </div>
             <div className="text-4xl font-black">28°C</div>
             <div className="text-xs font-medium text-emerald-100">Partly Cloudy • Feels like 30°C</div>
@@ -161,6 +194,8 @@ export default function Home() {
           if (item.id === "chat") return <Link key={item.id} href="/chat" className="h-full">{content}</Link>;
           if (item.id === "vision") return <Link key={item.id} href="/vision" className="h-full">{content}</Link>;
           if (item.id === "market") return <Link key={item.id} href="/market" className="h-full">{content}</Link>;
+          if (item.id === "irrigation") return <Link key={item.id} href="/irrigation" className="h-full">{content}</Link>;
+          if (item.id === "yield") return <Link key={item.id} href="/yield" className="h-full">{content}</Link>;
           return <div key={item.id}>{content}</div>;
         })}
       </div>

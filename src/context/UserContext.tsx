@@ -12,6 +12,10 @@ interface UserProfile {
   farmSize: string;
   soilType: string;
   lastWateredDate: string;
+  seedingDate: string;
+  harvestDate: string;
+  targetYield: number;
+  lastFertilizedDate: string;
   isOnboarded: boolean;
 }
 
@@ -42,6 +46,10 @@ export function UserProvider({ children }: { children: ReactNode }) {
     farmSize: "",
     soilType: "Loam",
     lastWateredDate: new Date().toISOString(),
+    seedingDate: new Date(Date.now() - 45 * 24 * 60 * 60 * 1000).toISOString(), // 45 days ago for demo
+    harvestDate: new Date(Date.now() + 75 * 24 * 60 * 60 * 1000).toISOString(), // 75 days to go
+    targetYield: 4.5,
+    lastFertilizedDate: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
     isOnboarded: false,
   });
   const [dictionary, setDictionary] = useState<any>(null);

@@ -7,6 +7,10 @@
     "crop_type": "Crop Type",
     "location": "Location / Village",
     "farm_size": "Farm Size (Acres)",
+    "soil_type": "Soil Type",
+    "soil_loam": "Loam (Balanced)",
+    "soil_clay": "Clay (Holds Water)",
+    "soil_sandy": "Sandy (Drains Fast)",
     "your_name": "Your Name",
     "button_start": "Start Farming Smart"
   },
@@ -15,7 +19,9 @@
     "summary": "Field Summary",
     "health": "Health",
     "market": "Market",
-    "weather": "Weather"
+    "weather": "Weather",
+    "yield": "Yield",
+    "maturity": "Maturity"
   },
   "chat": {
     "title": "AgriBot Assistant",

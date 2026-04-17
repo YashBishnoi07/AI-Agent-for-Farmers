@@ -7,6 +7,10 @@
     "crop_type": "फसल का प्रकार",
     "location": "स्थान / गांव",
     "farm_size": "क्षेत्रफल (एकड़)",
+    "soil_type": "मिट्टी का प्रकार",
+    "soil_loam": "दोमट (मिलेजुली)",
+    "soil_clay": "चिकनी मिट्टी",
+    "soil_sandy": "रेतीली मिट्टी",
     "your_name": "आपका नाम",
     "button_start": "स्मार्ट खेती शुरू करें"
   },
@@ -15,7 +19,9 @@
     "summary": "खेत का सारांश",
     "health": "स्वास्थ्य",
     "market": "मंडी",
-    "weather": "मौसम"
+    "weather": "मौसम",
+    "yield": "पैदावार",
+    "maturity": "परिपक्वता"
   },
   "chat": {
     "title": "AgriBot सहायक",

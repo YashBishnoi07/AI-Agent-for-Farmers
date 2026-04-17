@@ -7,6 +7,10 @@
     "crop_type": "ਫਸਲ ਦੀ ਕਿਸਮ",
     "location": "ਸਥਾਨ / ਪਿੰਡ",
     "farm_size": "ਖੇਤ ਦਾ ਆਕਾਰ (ਏਕੜ)",
+    "soil_type": "ਮਿੱਟੀ ਦੀ ਕਿਸਮ",
+    "soil_loam": "ਦੋਮਟ (ਮਿਲੀ-ਜੁਲੀ)",
+    "soil_clay": "ਚਿਕਣੀ ਮਿੱਟੀ",
+    "soil_sandy": "ਰੇਤੀਲੀ ਮਿੱਟੀ",
     "your_name": "ਤੁਹਾਡਾ ਨਾਮ",
     "button_start": "ਸਮਾਰਟ ਖੇਤੀ ਸ਼ੁਰੂ ਕਰੋ"
   },
@@ -15,7 +19,9 @@
     "summary": "ਖੇਤ ਦਾ ਸਾਰ",
     "health": "ਸਿਹਤ",
     "market": "ਮੰਡੀ",
-    "weather": "ਮੌਸਮ"
+    "weather": "ਮੌਸਮ",
+    "yield": "ਪੈਦਾਵਾਰ",
+    "maturity": "ਪਰਿਪੱਕਤਾ"
   },
   "chat": {
     "title": "AgriBot ਸਹਾਇਕ",

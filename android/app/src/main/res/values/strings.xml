@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">KrishiAI</string>
+    <string name="title_activity_main">KrishiAI</string>
+    <string name="package_name">com.krishiai.app</string>
+    <string name="custom_url_scheme">com.krishiai.app</string>
+</resources>

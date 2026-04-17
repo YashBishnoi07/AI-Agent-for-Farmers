@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useUser } from "@/context/UserContext";
+import { AIService } from "@/services/aiService";
 
 interface Message {
   id: string;
@@ -121,22 +122,15 @@ export default function ChatPage() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("/api/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ 
-          messages: [...messages, userMsg],
-          userProfile: profile 
-        }),
-      });
-
-      const data = await response.json();
-      if (data.error) throw new Error(data.error);
+      const result = await AIService.getChatResponse(
+        [...messages, userMsg],
+        profile
+      );
 
       const botMsg: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
-        content: data.text,
+        content: result.text,
         timestamp: new Date(),
       };
       
